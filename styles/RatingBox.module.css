@@ -1,0 +1,32 @@
+ .wrapperText {
+     border: 0.1vw solid #FFFFFF;
+     height: 2.8vw;
+     width: 95%;
+     position: absolute;
+     top: -1.5vw;
+     z-index: 10;
+     border-radius: 0.26vw;
+     left: -0.5vw;
+ }
+
+ .textRating {
+     color: #4E5051;
+     font-weight: bolder;
+     font-size: 1vw;
+     line-height: 2.8vw;
+     background: #FDD42A;
+     text-align: center;
+     border-radius: 0.26vw;
+
+ }
+
+ .containerRating {
+     opacity: 0.8;
+     position: absolute;
+     z-index: 9;
+     border-radius: 0.26vw;
+     height: 10vw;
+     text-align: center;
+     width: 100%;
+     background: linear-gradient(to bottom, #FFFFFF 53.99%, rgba(255, 255, 255, 0) 100%);
+ }

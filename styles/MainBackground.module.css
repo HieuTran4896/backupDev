@@ -1,0 +1,64 @@
+.mainWrapper {
+    background: linear-gradient(to bottom, #FDE962, #FEE54D, #FFD302, #FFCA02);
+    padding: 5% 0 1% 0;
+
+}
+
+.customerReview,
+.googleReview {
+    width: 15vw;
+    margin-right: 2.86vw;
+}
+
+.title {
+    font-weight: bolder;
+    font-size: 1.6vw;
+    line-height: 2.6vw;
+    width: 41vw;
+    margin-right: 1vw;
+    color: black;
+}
+
+.titleRight {
+    font-weight: bolder;
+    font-size: 1.6vw;
+    line-height: 2.6vw;
+    width: 41vw;
+    color: #F9640A;
+    font-style: italic;
+}
+
+.glowingCircle {
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    -webkit-animation: glowing 1s ease-in-out infinite alternate;
+    -moz-animation: glowing 1s ease-in-out infinite alternate;
+    animation: glowing 0.5s ease-in-out infinite alternate;
+
+}
+
+@keyframes glowing {
+    from {
+        box-shadow: 0 0 1vw #fff, 0 0 2vw #fff, 0 0 3vw #fff
+    }
+
+    to {
+        box-shadow: 0 0 2vw #fff, 0 0 3vw #F9A602,
+            0 0 4vw #F9A602
+    }
+}
+
+@-webkit-keyframes glowing {
+    from {
+        box-shadow: 0 0 1vw #fff, 0 0 2vw #fff
+    }
+
+    to {
+        box-shadow: 0 0 1vw #fff, 0 0 2vw #F9640A
+    }
+}

@@ -1,0 +1,185 @@
+.mainBackgroundRight {
+    width: 28vw;
+    margin-bottom: 10%;
+    padding: 1vw 0 0 0;
+    margin-top: -5%;
+    background-color: white;
+    border-radius: 0.3vw;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.25) 0.4vw 0.4vw 1.2vw 0;
+}
+
+.formTitle {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.5vw;
+    line-height: 1.6vw;
+    color: #2E2E2E;
+}
+
+.polygon {
+    width: 0.6vw;
+    height: 0.6vw;
+}
+
+.wrapperService,
+.wrapperBachelor,
+.wrapperWord {
+    width: 100%;
+    padding: 0 1vw !important;
+    height: 2.9vw;
+    border-radius: 0.3vw;
+    border: 0.1vw solid #808080;
+    margin-top: 0.87vw;
+    display: flex;
+    align-items: center;
+    font-size: 1vw;
+    justify-content: space-between;
+}
+
+.boxService,
+.boxBachelor {
+    border-radius: 0.3vw;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0.4vw 0.4vw 1.2vw 0;
+    animation-name: rotateX;
+    animation-duration: 100ms;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    font-size: 1vw !important;
+}
+
+.boxServiceClose,
+.boxBachelorClose {
+    display: none;
+}
+
+.boxService label,
+.boxBachelor label {
+    padding: 0.5vw 1vw;
+}
+
+.boxService input,
+.boxBachelor input {
+    visibility: hidden;
+}
+
+
+.wrapperService,
+.wrapperBachelor,
+.wrapperWord {
+    width: 100%;
+    padding: 0 1vw !important;
+    height: 2.9vw;
+    border-radius: 0.3vw;
+    border: 0.1vw solid #808080;
+    margin-top: 0.87vw;
+    display: flex;
+    align-items: center;
+    font-size: 1vw;
+    justify-content: space-between;
+}
+
+.wrapperWord {
+    margin-top: 0.87vw 0;
+}
+
+.wrapperService:focus,
+.wrapperBachelor:focus,
+.wrapperWord:focus {
+    border: 0.1vw solid #FEAE2F !important;
+    transition-duration: 0.5s;
+
+}
+
+
+.boxService label:hover,
+.boxBachelor label:hover {
+    background-color: gray;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.checkoutBox {
+    width: 100%;
+    padding: 2vw 0;
+    background-color: #808080;
+}
+
+.textCheckout {
+    font-size: 1vw;
+    line-height: 1.5vw;
+    color: white;
+    font-weight: 500;
+}
+
+.inputEmail,
+.inputEmail:focus {
+    border: none;
+    padding-left: 2vw;
+    outline: none;
+    font-size: 1.2vw;
+    border-radius: 0.4vw;
+    width: 80%;
+    height: 3.6vw;
+    background-color: white;
+}
+
+.buttonUnlock,
+.buttonUnlock:hover {
+    width: 20%;
+    height: 3.6vw;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    background: none;
+}
+
+.orderBox {
+    margin: 5%;
+    background: linear-gradient(to bottom, #FEAE2F 0%, #F9640A 100%);
+    width: 90%;
+    border-radius: 0.6vw;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.imageOrder {
+    width: 3.4vw;
+    height: 2vw;
+    transition: all 0.2s ease;
+    animation-direction: alternate;
+    animation-name: moveRight;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotateX {
+    0% {
+        opacity: 0;
+        transform: rotateX(90deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(1vw);
+    }
+}
