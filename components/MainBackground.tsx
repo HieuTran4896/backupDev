@@ -11,16 +11,20 @@ import {
   ModalBody,
 } from "@chakra-ui/react";
 
+import { useTranslation } from "next-i18next";
+
 import Style from "../styles/MainBackground.module.css";
 import OrderTable from "./OrderTable";
 import RatingBox from "./RatingBox";
 import * as vn from "../locales/vn/Mainbackground.json";
 import * as en from "../locales/en/Mainbackground.json";
 import { useRouter } from "next/router";
+
+
 const MainBackground: React.FC = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const { locale } = useRouter();
-  const t = locale === "en" ? en : vn;
+  const { t } = useTranslation('mainbackground');
+  
   return (
     <Container onClickCapture={onClose} className={Style.mainWrapper}>
       <Flex m="0 8vw" justifyContent="space-between">
@@ -30,9 +34,9 @@ const MainBackground: React.FC = () => {
           justifyContent="space-evenly"
         >
           <Box>
-            {" "}
-            <span className={Style.title}>{t.intro1}</span>
-            <span className={Style.titleRight}>{t.intro2}</span>
+            {""}
+            <span className={Style.title}>{t("intro1")}</span>
+            <span className={Style.titleRight}>{t("intro2")}</span>
           </Box>
 
           <Flex m="5vw 0">
@@ -69,7 +73,7 @@ const MainBackground: React.FC = () => {
               width="100%"
               m="1vw"
             >
-              {t.video}
+              {t("video")}
             </Text>
           </Box>
         </Flex>
