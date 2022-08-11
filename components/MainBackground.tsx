@@ -24,7 +24,7 @@ import { useRouter } from "next/router";
 const MainBackground: React.FC = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { t } = useTranslation('mainbackground');
-  
+
   return (
     <Container onClickCapture={onClose} className={Style.mainWrapper}>
       <Flex m="0 8vw" justifyContent="space-between">
@@ -95,7 +95,7 @@ const MainBackground: React.FC = () => {
                   borderRadius: "2vw",
                   height: "50vh",
                   border: "none",
-                  margin: "35vh 25vw",
+                  margin: "35vh  25vw",
                 }}
                 src="https://www.youtube.com/embed/I8ufwKPh6TE"
                 title="MAAS Introduce"
