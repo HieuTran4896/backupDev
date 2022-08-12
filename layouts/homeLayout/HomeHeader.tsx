@@ -1,15 +1,13 @@
 import * as React from "react";
 import Style from "../../styles/HomePage.module.css";
 import { Container, UnorderedList, ListItem } from "@chakra-ui/react";
-import * as en from "../../locales/en/Header.json";
-import * as vn from "../../locales/vn/Header.json";
 import { useRouter } from "next/router";
 import { Link } from "@mui/material";
+import { useTranslation } from "next-i18next";
 const HomeHeader: React.FC = (props) => {
   const [language, setLanguage] = React.useState(false);
   const [user, setUser] = React.useState(false);
   const [poly, setPoly] = React.useState(false);
-
   const [header, setHeader] = React.useState(false);
   const [polyLanguage, setPolyLanguage] = React.useState(false);
   const changeHeaderColor = () => {
@@ -19,8 +17,9 @@ const HomeHeader: React.FC = (props) => {
       setHeader(false);
     }
   };
+  const { t } = useTranslation("header");
   const { locale } = useRouter();
-  const t = locale === "en" ? en : vn;
+  const router = useRouter();
   return (
     <Container
       onMouseUpCapture={() => {
@@ -28,7 +27,7 @@ const HomeHeader: React.FC = (props) => {
         setPolyLanguage(false);
         setLanguage(false);
       }}
-      className={Style.header}
+      className={locale === "vn" ? Style.headerVN : Style.header}
     >
       <UnorderedList
         className={Style.headerLeft}
@@ -43,7 +42,7 @@ const HomeHeader: React.FC = (props) => {
             className={Style.companyIcon}
           />
         </ListItem>
-        <ListItem>{t.about}</ListItem>
+        <ListItem>{t("about")}</ListItem>
         <ListItem
           onMouseOver={() => {
             setPoly(true);
@@ -53,7 +52,7 @@ const HomeHeader: React.FC = (props) => {
           }}
           className={Style.dropdown}
         >
-          {t.service}
+          {t("service")}
           {poly ? (
             <img
               src="/assets/images/polyUp.png"
@@ -76,11 +75,11 @@ const HomeHeader: React.FC = (props) => {
             <ListItem className={Style.dropdownItem}>Research</ListItem>
           </UnorderedList>
         </ListItem>
-        <ListItem>{t.policy}</ListItem>
-        <ListItem>{t.library}</ListItem>
-        <ListItem>{t.tool}</ListItem>
-        <ListItem>{t.faq}</ListItem>
-        <ListItem>{t.review}</ListItem>
+        <ListItem>{t("policy")}</ListItem>
+        <ListItem>{t("library")}</ListItem>
+        <ListItem>{t("too")}</ListItem>
+        <ListItem>{t("faq")}</ListItem>
+        <ListItem>{t("review")}</ListItem>
       </UnorderedList>
       <UnorderedList
         alignItems="center"
@@ -88,8 +87,15 @@ const HomeHeader: React.FC = (props) => {
         listStyleType="none"
         className={Style.headerRight}
       >
-        <ListItem className={Style.orderButton}>{t.order}</ListItem>
-        <ListItem className={Style.loginButton}>{t.login}</ListItem>
+        <ListItem className={Style.orderButton}>{t("order")}</ListItem>
+        <ListItem
+          onClick={() => {
+            router.push(`/${locale}/login`);
+          }}
+          className={Style.loginButton}
+        >
+          {t("login")}
+        </ListItem>
 
         <ListItem style={{ position: "relative", cursor: "pointer" }}>
           <img

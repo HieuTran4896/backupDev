@@ -1,0 +1,107 @@
+.exitButton {
+    width: 1.7vw;
+    height: 1.7vw;
+    align-self: end;
+    margin-top: 0.78vw;
+    margin-right: 0.78vw;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.logoCompany {
+    margin-top: 3.69vw;
+    margin-left: 6vw;
+    width: 8vw;
+    align-self: flex-start;
+    height: 2vw;
+}
+
+.accountContainer {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+}
+
+.accountWrapper {
+    background: transparent;
+    border: 0.1vw solid transparent;
+    border-radius: 0.36vw;
+    box-shadow: 0 0.2vw 0.8vw 0 rgb(99 99 99 / 20%);
+    height: 92vh;
+    margin: 4vh 25%;
+    width: 50%;
+
+}
+
+.containerLayout {
+    margin: 4vw 6vw 8vw 6vw;
+    text-align: center;
+}
+
+.textTitle {
+    font-weight: bolder;
+    font-size: 1.3vw;
+    margin-bottom: 1vw;
+    line-height: 1.17vw;
+}
+
+.createText {
+    font-weight: 500;
+    background: linear-gradient(to right, #feae2f 0%, #f9640a 100%);
+    background-clip: text;
+    color: transparent;
+    border-bottom: 0.1vw solid #f9640a;
+    cursor: pointer;
+}
+
+.emailInput,
+.passInput {
+    border-radius: 0.26vw;
+    padding-left: 1vw;
+    height: 4vw;
+    width: 100%;
+    font-size: 1vw;
+    margin: 2vw 0;
+}
+
+.remember {
+    font-size: 1vw;
+    font-weight: 500;
+    line-height: 1.3vw;
+}
+
+.forgotText {
+    font-size: 1vw;
+    font-weight: 500;
+    line-height: 1.3vw;
+    background: linear-gradient(to right, #feae2f 0%, #f9640a 100%);
+    background-clip: text;
+    color: transparent;
+    text-align: left;
+    cursor: pointer;
+    border-bottom: 0.1vw solid #f9640a;
+    display: table-cell;
+}
+
+.signinButton,
+.registerButton {
+    color: white;
+    width: 100%;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    border-radius: 0.26vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    background: linear-gradient(to bottom, #feae2f 0%, #f9640a 100%);
+}
+
+.signinButton:focus {
+    border: none;
+    outline: none;
+}

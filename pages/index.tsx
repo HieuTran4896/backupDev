@@ -1,7 +1,25 @@
 import Head from "next/head";
-import HomePage from "./Home";
+import HomePage from "./home";
+import Login from "./login";
+import Register from "./register";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { GetStaticProps } from "next";
+import Recovery from "./recovery";
 
-export default function Index() {
+export const getStaticProps: GetStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, [
+      "main",
+      "caculate",
+      "header",
+      "login",
+      "register",
+      "recovery",
+    ])),
+  },
+});
+
+export default function Index({ props }) {
   return (
     <div>
       <Head>
@@ -23,6 +41,9 @@ export default function Index() {
         />
       </Head>
       <HomePage />
+      <Login />
+      <Register />
+      <Recovery />
     </div>
   );
 }

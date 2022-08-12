@@ -22,14 +22,11 @@ import {
   WrapItem,
   Flex,
 } from "@chakra-ui/react";
-import * as en from "../locales/en/CaculateTable.json";
-import * as vn from "../locales/vn/CaculateTable.json";
+import { useTranslation } from "next-i18next";
 const OrderTable: React.FC = () => {
-  const { locale } = useRouter();
-  const t = locale === "en" ? en : vn;
-
-  const [service, setService] = React.useState(t.type);
-  const [bachelor, setBachelor] = React.useState(t.level);
+  const { t } = useTranslation("caculate");
+  const [service, setService] = React.useState(`${t("type")}`);
+  const [bachelor, setBachelor] = React.useState(`${t("level")}`);
   const [serviceInput, setServiceInput] = React.useState<boolean>(false);
   const [bachelorInput, setBachelorInput] = React.useState<boolean>(false);
   const [value, setValue] = React.useState(new Date());
@@ -217,7 +214,9 @@ const OrderTable: React.FC = () => {
           <input
             type="text"
             value={word}
-            placeholder={service === "Online Test" ? `${t.time}` : `${t.words}`}
+            placeholder={
+              service === "Online Test" ? `${t("time")}` : `${t("words")}`
+            }
             className={Style.wrapperWord}
             onChange={handleWord}
           />
@@ -229,7 +228,7 @@ const OrderTable: React.FC = () => {
           justifyContent="space-evenly"
         >
           <Text fontWeight="500" fontSize="1vw" m="0">
-            {t.price}
+            {t("price")}
           </Text>
           <Text fontWeight="bolder" fontSize="1.9vw" color="#FEAE2F" margin="0">
             $ {price}
@@ -238,8 +237,8 @@ const OrderTable: React.FC = () => {
         <Box className={Style.checkoutBox}>
           <Flex justifyContent="space-between" m=" 0 5%">
             <Box className={Style.textCheckout}>
-              <Text>{t.sales}</Text>
-              <Text>{t.only}</Text>
+              <Text>{t("sales")}</Text>
+              <Text>{t("only")}</Text>
             </Box>
             <Text fontWeight="bolder" fontSize="1.9vw" color="#FFF">
               $ {total}
@@ -250,7 +249,7 @@ const OrderTable: React.FC = () => {
               className={Style.inputEmail}
               onChange={handleEmail}
               value={email}
-              placeholder={t.email}
+              placeholder={t("email")}
             />
             <button
               onClick={(event) => {
@@ -283,7 +282,7 @@ const OrderTable: React.FC = () => {
         <div className={Style.orderBox}>
           <Flex alignItems="center" justifyContent="space-evenly">
             <Text fontSize="2.4vw" color="white" fontWeight="bolder">
-              {t.order}
+              {t("order")}
             </Text>
             <img
               className={Style.imageOrder}
