@@ -5,8 +5,6 @@ import Register from "./register";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { GetStaticProps } from "next";
 import Recovery from "./recovery";
-
-
 export const getStaticProps: GetStaticProps = async ({ locale }) => ({
   props: {
     ...(await serverSideTranslations(locale, [
@@ -21,9 +19,7 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => ({
   },
 });
 
-
 export default function Index() {
-
   return (
     <div>
       <Head>
