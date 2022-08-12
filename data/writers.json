@@ -1,0 +1,98 @@
+[
+    {
+        "image": "/assets/images/writer.png",
+        "name": "MA542",
+        "star": "/assets/images/star5.png",
+        "finishPaper": 3245,
+        "level": "Bachelor",
+        "rate": "95%"
+    },
+    {
+        "image": "/assets/images/writer2.png",
+        "name": "Writer2",
+        "star": "/assets/images/star5.png",
+        "finishPaper": 2967,
+        "level": "Bachelor",
+        "rate": "92%"
+    },
+    {
+        "image": "/assets/images/writer3.png",
+        "name": "Writer3",
+        "star": "/assets/images/star5.png",
+        "finishPaper": 2450,
+        "level": "Ph.D",
+        "rate": "96%"
+    },
+    {
+        "image": "/assets/images/writer4.png",
+        "name": "MA542",
+        "star": "/assets/images/star5.png",
+        "finishPaper": 3245,
+        "level": "Bachelor",
+        "rate": "95%"
+    },
+    {
+        "image": "/assets/images/writer5.png",
+        "name": "Writer2",
+        "star": "/assets/images/star5.png",
+        "finishPaper": 2967,
+        "level": "Bachelor",
+        "rate": "92%"
+    },
+    {
+        "image": "/assets/images/writer6.png",
+        "name": "Writer3",
+        "star": "/assets/images/star5.png",
+        "finishPaper": 2450,
+        "level": "Ph.D",
+        "rate": "96%"
+    },
+    {
+        "image": "/assets/images/writer7.png",
+        "name": "MA542",
+        "star": "/assets/images/star5.png",
+        "finishPaper": 3245,
+        "level": "Bachelor",
+        "rate": "95%"
+    },
+    {
+        "image": "/assets/images/writer8.png",
+        "name": "Writer2",
+        "star": "/assets/images/star5.png",
+        "finishPaper": 2967,
+        "level": "Bachelor",
+        "rate": "92%"
+    },
+    {
+        "image": "/assets/images/writer9.png",
+        "name": "Writer3",
+        "star": "/assets/images/star5.png",
+        "finishPaper": 2450,
+        "level": "Ph.D",
+        "rate": "96%"
+    },
+    {
+        "image": "/assets/images/writer10.png",
+        "name": "MA542",
+        "star": "/assets/images/star5.png",
+        "finishPaper": 3245,
+        "level": "Bachelor",
+        "rate": "95%"
+    },
+    {
+        "image": "/assets/images/writer11.png",
+        "name": "Writer2",
+        "star": "/assets/images/star5.png",
+        "finishPaper": 2967,
+        "level": "Bachelor",
+        "rate": "92%"
+    },
+    {
+        "image": "/assets/images/writer.png",
+        "name": "Writer3",
+        "star": "/assets/images/star5.png",
+        "finishPaper": 2450,
+        "level": "Ph.D",
+        "rate": "96%"
+    }
+]

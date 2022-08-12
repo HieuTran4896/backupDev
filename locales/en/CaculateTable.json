@@ -1,0 +1,14 @@
+{
+  "type": "Essay",
+  "level": "Academic level",
+  "hour": "Hour",
+  "time": "Time",
+  "min": "Min",
+  "words": "Words",
+  "price": "Standard price",
+  "sales": "Special price (Locked)",
+  "only": "Save on your first order",
+  "email": "Enter email to unlock",
+  "unlock": "Unlock",
+  "order": "Order now"
+}

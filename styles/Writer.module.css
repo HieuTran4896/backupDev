@@ -1,0 +1,44 @@
+.writerBackground {
+    background: #f7f7f7;
+    padding: 2vw 0;
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    border-radius: 3%;
+}
+
+.hire {
+    width: 10vw;
+    height: 4vw;
+    text-align: center;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 2vw;
+    font-weight: bodler;
+    background: linear-gradient(to bottom, #FEAE2F 0%, #F9640A 100%);
+    border-radius: 0.3vw;
+}
+
+.nextButton,
+.nextButtonDisabled,
+.prevButton,
+.prevButtonDisabled {
+    margin: auto;
+    width: 20vw;
+    height: 20vw;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.swiper {
+    padding: 2vw 1vw 5vw 1vw !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: none !important;
+    outline: none !important;
+}

@@ -15,6 +15,7 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => ({
       "login",
       "register",
       "recovery",
+      "writer",
     ])),
   },
 });

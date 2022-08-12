@@ -1,0 +1,14 @@
+{
+  "type": "Loại bài",
+  "level": "Academic level",
+  "hour": "Giờ",
+  "min": "Phút",
+  "words": "Số từ",
+  "time": "Thời gian",
+  "price": "Chi phí tham khảo",
+  "sales": "Ưu đãi đặc biệt",
+  "only": "(Chỉ dành cho đơn hàng đầu tiên)",
+  "email": "Email",
+  "unlock": "Nhận ưu đãi",
+  "order": "Đặt bài ngay"
+}

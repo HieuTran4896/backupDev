@@ -33,3 +33,37 @@ body {
   border-color: none !important;
   border-width: 0 !important;
 }
+
+.swiper-wrapper {
+  border: transparent !important;
+  box-shadow: none !important;
+  border-radius: none !important;
+  outline: none !important;
+  padding: 0 !important
+}
+
+.swiper {
+  padding: 2vw 1vw 5vw 1vw !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: none !important;
+  outline: none !important;
+}
+
+.swiper-slide {
+  text-align: center !important;
+  background: #fff;
+  padding: 2vw 0;
+  border-radius: 3%;
+  display: flex;
+  flex-direction: column;
+  transition: 0.6s ease-in-out !important;
+}
+
+.swiper-slide:hover {
+  border: 0.15vw solid #F9640A !important;
+  transform: translateY(-2vw) !important;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0.6vw 2.4vw 0, rgba(0, 0, 0, 0.08) 0px 0px 0px 0.1vw !important;
+  transition: 0.6s ease-in-out !important;
+}
