@@ -1,3 +1,4 @@
+
 const path = require("path");
 
 module.exports = {
@@ -7,3 +8,4 @@ module.exports = {
   },
   localePath: path.resolve("./locales"),
 };
+

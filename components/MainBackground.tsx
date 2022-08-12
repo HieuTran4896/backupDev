@@ -17,7 +17,6 @@ import RatingBox from "./RatingBox";
 const MainBackground: React.FC = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { t } = useTranslation("main");
-
   return (
     <Container onClickCapture={onClose} className={Style.mainWrapper}>
       <Flex m="0 8vw" justifyContent="space-between">
@@ -29,7 +28,9 @@ const MainBackground: React.FC = () => {
           <Box>
             {""}
             <span className={Style.title}>{t("intro1")}</span>
-            <span className={Style.titleRight}>{t("intro2")}</span>
+            <span className={Style.titleRight}>
+              {t("order", { ns: "header" })}
+            </span>
           </Box>
 
           <Flex m="5vw 0">
