@@ -6,6 +6,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { GetStaticProps } from "next";
 import Recovery from "./recovery";
 
+<<<<<<< HEAD
 export const getStaticProps: GetStaticProps = async ({ locale }) => ({
   props: {
     ...(await serverSideTranslations(locale, [
@@ -21,6 +22,17 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => ({
 });
 
 export default function Index({ props }) {
+=======
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ['common', 'mainbackground', 'CaculateTable', 'header'])),
+  }
+})
+
+export default function Index() {
+>>>>>>> 783fbf5 (MS-17: Fix multi language)
   return (
     <div>
       <Head>

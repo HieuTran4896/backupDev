@@ -17,7 +17,6 @@ import RatingBox from "./RatingBox";
 const MainBackground: React.FC = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { t } = useTranslation("main");
-
   return (
     <Container onClickCapture={onClose} className={Style.mainWrapper}>
       <Flex m="0 8vw" justifyContent="space-between">
