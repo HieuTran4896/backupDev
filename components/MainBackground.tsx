@@ -28,7 +28,9 @@ const MainBackground: React.FC = () => {
           <Box>
             {""}
             <span className={Style.title}>{t("intro1")}</span>
-            <span className={Style.titleRight}>{t("intro2")}</span>
+            <span className={Style.titleRight}>
+              {t("order", { ns: "header" })}
+            </span>
           </Box>
 
           <Flex m="5vw 0">
