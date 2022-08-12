@@ -3,7 +3,7 @@ import HomePage from "./Home";
 
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
-export const getStaticProps = async ({ locale }) => ({
+export const  getServerSideProps  = async ({ locale }) => ({
   props: {
     ...(await serverSideTranslations(locale, ['common', 'mainbackground', 'CaculateTable', 'header'])),
   }
