@@ -25,13 +25,9 @@
     "next-i18next": "^11.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-<<<<<<< HEAD
     "react-i18next": "^11.18.3",
     "swiper": "^8.3.2",
     "swiper-bundle": "0.0.1-security"
-=======
-    "react-i18next": "^11.18.3"
->>>>>>> github-desktop-MAAS-Edtech/dev
   },
   "devDependencies": {
     "@types/node": "^18.6.5",
